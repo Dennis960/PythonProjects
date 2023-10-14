@@ -1,0 +1,15 @@
+[Unit]
+Description=LesBot service
+After=network.target
+
+[Service]
+type=notify
+ExecStart=/usr/bin/python3 /home/pi/Led/telegramLoop.py
+StandardOutput=inherit
+StandardError=inherit
+WatchdogSec=18000
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

@@ -1,2 +1,11 @@
 __pycache__
 .vscode
+.ionide
+
+# TOKENS
+*.pickle
+*token*
+
+# LOG FILES
+*.log
+*.log.*
